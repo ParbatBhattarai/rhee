@@ -90,8 +90,7 @@ def interpret(trees,env = environment,tb=None):
     if not env:
         env = environment
 
-    while (gui.app.Pending()):
-        gui.app.Dispatch();
+    gui.app.SafeYield(None, True)
     if (not gui.running):   #if the red button clicked, stop
         raise KeyboardInterrupt()
 

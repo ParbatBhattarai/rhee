@@ -122,9 +122,9 @@ class Example(wx.Frame):
 
         self.panel = wx.Panel(self)
 
-        self.font = wx.SystemSettings_GetFont(wx.SYS_SYSTEM_FONT)
+        self.font = wx.SystemSettings.GetFont(wx.SYS_SYSTEM_FONT)
         self.font.SetPointSize(9)
-        self.font1 = wx.SystemSettings_GetFont(wx.SYS_SYSTEM_FONT)
+        self.font1 = wx.SystemSettings.GetFont(wx.SYS_SYSTEM_FONT)
         self.font1.SetPointSize(18)
 
         self.vbox = wx.BoxSizer(wx.VERTICAL)
